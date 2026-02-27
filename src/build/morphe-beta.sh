@@ -29,6 +29,7 @@ morphe_dl(){
 	# Patch YouTube Music:
 	# Arm64-v8a
 	get_patches_key "youtube-music-morphe"
+	prefer_version="9.08.51"
 	get_apk "com.google.android.apps.youtube.music" "youtube-music-beta-arm64-v8a" "youtube-music" "google-inc/youtube-music/youtube-music" "arm64-v8a"
 	patch "youtube-music-beta-arm64-v8a" "morphe" "morphe"
 	# Armeabi-v7a
