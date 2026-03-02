@@ -126,7 +126,7 @@ revanced_dl(){
 	patch "rar" "revanced"
 	# Patch Lightroom:
 	get_patches_key "lightroom"
- 	url="https://adobe-lightroom-mobile.en.uptodown.com/android/download/1033600808" #Use uptodown because apkmirror always ask pass Cloudflare on this app
+ 	url="https://adobe-lightroom-mobile.en.uptodown.com/android/download/1033600808-x" #Use uptodown because apkmirror always ask pass Cloudflare on this app
 	url="https://dw.uptodown.com/dwn/$(req "$url" - | $pup -p --charset utf-8 'button#detail-download-button attr{data-url}')"
 	req "$url" "lightroom.apk"
 	patch "lightroom" "revanced"
@@ -185,7 +185,7 @@ revanced_dl(){
 	patch "photomath" "revanced"
 	# Patch Strava:
 	get_patches_key "strava"
-	get_apkpure "com.strava" "strava-arm64-v8a" "strava-run-hike-2025-health/com.strava" "Bundle"
+	get_apkpure "com.strava" "strava-arm64-v8a" "strava-run-hike-android-exercise-laugh/com.strava" "Bundle"
 	patch "strava-arm64-v8a" "revanced"
 }
 12() {
